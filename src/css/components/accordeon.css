@@ -1,3 +1,14 @@
 /**
 * Accordeon
 */
+
+details {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+details[open] {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
