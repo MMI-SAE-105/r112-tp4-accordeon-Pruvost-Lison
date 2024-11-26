@@ -1,14 +1,35 @@
 /**
 * Accordeon
 */
+.accordeon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 10px;
+
+}
 
 details {
+    display: flex;
+    width: 100px;
     padding: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: width 2s ease;
+    overflow: hidden;
+
 }
 
 details[open] {
     background-color: #f0f0f0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+details div {
+    min-width: 200px;
+    padding: 10px;
+}
+
+summary {
+    cursor: pointer;
 }
