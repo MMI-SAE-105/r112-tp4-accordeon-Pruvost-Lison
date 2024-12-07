@@ -57,3 +57,8 @@ summary::after {
     border-left: 20px solid #808080;
     transition: transform 0.3s ease, border-left-color 0.3s ease;
 }
+
+details[open] summary::after {
+    transform: translateY(-50%) rotate(90deg);
+    border-left-color: rgba(255, 0, 0, 0.422);
+}
