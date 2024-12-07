@@ -12,10 +12,10 @@
 details {
     display: flex;
     width: 100px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     transition: width 2s ease;
-    overflow: hidden;
+    overflow: visible;
 
 }
 
@@ -30,6 +30,12 @@ details div {
     padding: 10px;
 }
 
+
 summary {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding-right: 30px; 
 }
