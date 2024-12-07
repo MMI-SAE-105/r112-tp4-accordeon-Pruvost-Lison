@@ -39,3 +39,21 @@ summary {
     position: relative;
     padding-right: 30px; 
 }
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #808080;
+    transition: transform 0.3s ease, border-left-color 0.3s ease;
+}
